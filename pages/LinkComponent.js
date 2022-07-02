@@ -16,4 +16,17 @@ const LinkComponent = () => {
   )
 }
 
-export default LinkComponent
+export default LinkComponent;
+
+/***
+ * dev notes; 
+ * 
+ * any <Link/> component in the viewport(initially or through scroll) will be 
+ * prefeched by default (including the corresponding data) for pages using static Generation
+ * its mean for this page there are two link and when we open this page hen browser will also 
+ * preload NestedRoute page emd preload static data and FullyDynamicRoutepage and its own data
+ * 
+ * 
+ * 
+ * 
+ */
