@@ -37,3 +37,16 @@ export async function getStaticProps() {
     }
   }
 }
+
+/***
+ * dev notes: 
+ * we might not always need to pre render the data
+ * ex: user dashboard page 
+ * its private and behind the ogin screen
+ * highly user spesific and seo is not required 
+ * no need the pre render data 
+ * 
+ * so we can rely on client side data fetching 
+ * 
+ * 
+ */
