@@ -30,3 +30,8 @@ function ISRExample({ products }) {
       revalidate: 30
     }
   }
+
+  /***
+   * 
+   * this is the example of ISR (incremental static regeneration)
+   */

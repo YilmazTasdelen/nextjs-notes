@@ -28,7 +28,7 @@ function ArticleListByCategory({ articles, category }) {
     const data = await response.json()
   
     console.log(`Pre-rendering News Articles for category ${category}`)
-    res.setHeader('Set-Cookie', ['name=Vishwas'])
+    res.setHeader('Set-Cookie', ['name=Yilmaz'])
     console.log(req.headers.cookie)
     console.log(query)
     return {
@@ -38,3 +38,11 @@ function ArticleListByCategory({ articles, category }) {
       }
     }
   }
+
+
+  /***
+   * this is the example of server side renderin with dynamic route parameters.
+   * 
+   * 
+   * 
+   */
