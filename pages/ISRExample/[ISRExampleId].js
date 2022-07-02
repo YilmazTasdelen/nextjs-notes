@@ -56,8 +56,18 @@ export async function getStaticPaths() {
  * the re-generation can also fail and the previos cached html could be served till the subsequent 
  * re-generations succeed.
  * 
+ * problems with static Feneration;
+ * no able to fetch data per request, we run into problem of stale data
+ * incremental satic re-geneation can help but if we revalidate is 1 second, we still migth not
+ * always see the most up to date contents when re-generation is happening in he background
  * 
+ * solution;
+ * server side rendering (SSR); 
  * 
+ * ssr is a form pre-render where html is generated at request time
+ * ss is required when you need to fetch data per request and also when you need to fetch
+ * personalized data keeping in mind SEO
  * 
- * 
+ * How does Next.js  make it possible to get access to the inoming request which will facilitate
+ * fetching data personalized for user
  */
